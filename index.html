@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+  </head>
+  <body>
+    <h1>Filter Profession</h1>
+    <div class="container" >
+    <form method="post" onsubmit="filterList(event)">
+      <label for="filterBox">Choose Profession Type:</label>
+      <select id="filterBox" name="selectedFilter" required>
+        <option value="" >Select Profession</option>
+        <option value="developer">Developer</option>
+        <option value="admin">Admin</option>
+      </select><i class="fa-solid fa-rotate-left" title="Reset to default" onclick="reset()"></i>
+      
+      <ul class="list"></ul>
+      <button class="submit" type="submit">Filter</button>
+    </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
